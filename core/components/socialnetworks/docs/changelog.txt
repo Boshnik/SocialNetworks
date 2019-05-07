@@ -1,5 +1,10 @@
 Список изменений
 
+1.0.1-pl
+==============
+ - Улучшен сниппет SocialNetworks
+ - Добавлены 2 системные настройки: socialnetworks_fontawesome_css и socialnetworks_fontawesome_js
+
 1.0.0-pl
 ==============
-- Первый релиз
+ - Первый релиз
