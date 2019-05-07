@@ -7,11 +7,19 @@ return [
         'properties' => [
             'tplOuter' => [
                 'type' => 'textfield',
-                'value' => '@INLINE <ul class="list-inline">{$wrapper}</ul>',
+                'value' => '@INLINE <ul {$classes}>{$wrapper}</ul>',
             ],
             'tpl' => [
                 'type' => 'textfield',
-                'value' => '@INLINE <li class="list-inline-item"><a href="{$link}" target="_blank" title="{$name}"><i class="fab fa-{$name}"></i></a></li>',
+                'value' => '@INLINE <li {$classes}><a href="{$link}" target="_blank" title="{$name}"><i class="fab fa-{$name}"></i></a></li>',
+            ],
+            'outerClass' => [
+                'type' => 'textfield',
+                'value' => 'list-inline',
+            ],
+            'rowClass' => [
+                'type' => 'textfield',
+                'value' => 'list-inline-item',
             ],
             'sortby' => [
                 'type' => 'textfield',
