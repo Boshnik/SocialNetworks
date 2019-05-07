@@ -34,11 +34,17 @@ class SocialNetworks
     public function loadJsCss($fontawesome)
     {
         if($fontawesome == 'webfont') {
-            $this->modx->regClientCss('//use.fontawesome.com/releases/v5.8.1/css/all.css');
+            $fontawesome_css = $this->modx->getOption('socialnetworks_fontawesome_css');
+            if(!empty($fontawesome_css)) {
+                $this->modx->regClientCss($fontawesome_css);   
+            }
         }
         
         if($fontawesome == 'svg') {
-            $this->modx->regClientStartupScript('//use.fontawesome.com/releases/v5.8.1/js/all.js');
+            $fontawesome_js = $this->modx->getOption('socialnetworks_fontawesome_js');
+            if(!empty($fontawesome_js)) {
+                $this->modx->regClientStartupScript($fontawesome_js);    
+            }
         }
     }
     
