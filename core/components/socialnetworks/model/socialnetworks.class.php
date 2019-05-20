@@ -10,9 +10,9 @@ class SocialNetworks
      * @param modX $modx
      * @param array $config
      */
-    function __construct(modX &$modx, array $config = [])
+    function __construct(modX $modx, array $config = [])
     {
-        $this->modx =& $modx;
+        $this->modx = $modx;
         $corePath = MODX_CORE_PATH . 'components/socialnetworks/';
         $assetsUrl = MODX_ASSETS_URL . 'components/socialnetworks/';
 
@@ -68,7 +68,20 @@ class SocialNetworks
         }
         $query->prepare();
         $query->stmt->execute();
-        return $query->stmt->fetchAll(PDO::FETCH_ASSOC);
+        
+        $results = $query->stmt->fetchAll(PDO::FETCH_ASSOC);
+        $services = json_decode($this->modx->getOPtion('socialnetworks_services'));
+        
+        foreach($results as $idx => $result) {
+            $results[$idx]['icon'] = $result['name'];
+            foreach($services as $service) {
+                if($service[0] == $result['name']) {
+                    $results[$idx]['name'] = $service[1];      
+                }
+            }
+        }
+        
+        return $results;
     }
 
 }

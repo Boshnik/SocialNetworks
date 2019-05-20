@@ -8,7 +8,7 @@ if (!$SocialNetworks) {
 }
 
 $tplOuter = $modx->getOption('tplOuter', $scriptProperties, '@INLINE <ul {$classes}>{$wrapper}</ul>', true);
-$tpl = $modx->getOption('tpl', $scriptProperties, '@INLINE <li {$classes}><a href="{$link}" target="_blank" title="{$name}"><i class="fab fa-{$name}"></i></a></li>', true);
+$tpl = $modx->getOption('tpl', $scriptProperties, '@INLINE <li {$classes}><a href="{$link}" target="_blank" title="{$name}"><i class="fab fa-{$icon}"></i></a></li>', true);
 $outputSeparator = $modx->getOption('outputSeparator', $scriptProperties, "\n");
 $toPlaceholder = $modx->getOption('toPlaceholder', $scriptProperties, false);
 $fontawesome = $modx->getOption('fontawesome', $scriptProperties, 'WebFont', true);

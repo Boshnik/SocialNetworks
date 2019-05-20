@@ -11,7 +11,7 @@ return [
             ],
             'tpl' => [
                 'type' => 'textfield',
-                'value' => '@INLINE <li {$classes}><a href="{$link}" target="_blank" title="{$name}"><i class="fab fa-{$name}"></i></a></li>',
+                'value' => '@INLINE <li {$classes}><a href="{$link}" target="_blank" title="{$name}"><i class="fab fa-{$icon}"></i></a></li>',
             ],
             'outerClass' => [
                 'type' => 'textfield',
