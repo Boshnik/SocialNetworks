@@ -1,5 +1,4 @@
 <?php
-
 $_lang['socialnetworks_prop_tplOuter'] = 'Чанк оформления всего блока';
 $_lang['socialnetworks_prop_tpl'] = 'Чанк оформления сервиса.';
 $_lang['socialnetworks_prop_outerClass'] = 'Класс обертки блока.';
