@@ -11,7 +11,7 @@ if (!defined('MODX_CORE_PATH')) {
 return [
     'name' => 'SocialNetworks',
     'name_lower' => 'socialnetworks',
-    'version' => '1.0.2',
+    'version' => '1.0.4',
     'release' => 'pl',
     // Install package to site right after build
     'install' => true,

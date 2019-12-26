@@ -50,7 +50,7 @@ class SocialNetworks
     
     public function getServices($scriptProperties)
     {
-        $sortby = $scriptProperties['sortby'] ?: 'name';
+        $sortby = $scriptProperties['sortby'] ?: 'position';
         $sortdir = $scriptProperties['sortdir'] ?: 'ASC';
         $limit = $scriptProperties['limit'] ?: 0;
         $services = $scriptProperties['services'] ?: '';

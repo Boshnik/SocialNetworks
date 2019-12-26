@@ -23,7 +23,7 @@ return [
             ],
             'sortby' => [
                 'type' => 'textfield',
-                'value' => 'name',
+                'value' => 'position',
             ],
             'sortdir' => [
                 'type' => 'list',
