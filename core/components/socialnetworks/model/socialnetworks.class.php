@@ -5,7 +5,6 @@ class SocialNetworks
     /** @var modX $modx */
     public $modx;
 
-
     /**
      * @param modX $modx
      * @param array $config
@@ -36,6 +35,9 @@ class SocialNetworks
         if($fontawesome == 'webfont') {
             $fontawesome_css = $this->modx->getOption('socialnetworks_fontawesome_css');
             if(!empty($fontawesome_css)) {
+                if($tpl_css = $this->modx->getoption('boilerplate_tpl_css')) {
+                    $fontawesome_css = str_replace('[[+file]]', $fontawesome_css, $tpl_css);
+                }
                 $this->modx->regClientCss($fontawesome_css);   
             }
         }
@@ -43,6 +45,9 @@ class SocialNetworks
         if($fontawesome == 'svg') {
             $fontawesome_js = $this->modx->getOption('socialnetworks_fontawesome_js');
             if(!empty($fontawesome_js)) {
+                if($tpl_js = $this->modx->getoption('boilerplate_tpl_js')) {
+                    $fontawesome_js = str_replace('[[+file]]', $fontawesome_js, $tpl_js);
+                }
                 $this->modx->regClientStartupScript($fontawesome_js);    
             }
         }
@@ -80,8 +85,6 @@ class SocialNetworks
                 }
             }
         }
-        
         return $results;
     }
-
 }
