@@ -15,7 +15,7 @@ return [
             ],
             'outerClass' => [
                 'type' => 'textfield',
-                'value' => 'list-inline',
+                'value' => 'social list-inline',
             ],
             'rowClass' => [
                 'type' => 'textfield',
