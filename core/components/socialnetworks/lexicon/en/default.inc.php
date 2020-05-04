@@ -8,6 +8,7 @@ $_lang['socialnetworks_intro_msg'] = 'All free font icons are supported <a href=
 $_lang['socialnetworks_items'] = 'Services';
 $_lang['socialnetworks_item_id'] = 'Id';
 $_lang['socialnetworks_item_name'] = 'Name';
+$_lang['socialnetworks_choose_service'] = 'Choose a service';
 $_lang['socialnetworks_item_icon'] = 'Icon';
 $_lang['socialnetworks_item_icon_img'] = 'Image';
 $_lang['socialnetworks_item_link'] = 'Link';

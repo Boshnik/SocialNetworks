@@ -28,7 +28,7 @@ Ext.extend(SocialNetworks.window.CreateItem, MODx.Window, {
             id: config.id + '-name',
             anchor: '99%',
             allowBlank: false,
-            emptyText : 'Выберите сервис',
+            emptyText : _('socialnetworks_choose_service'),
             store: JSON.parse(MODx.config['socialnetworks_services']),
             fields: ['name','value'],
             valueField: 'name',

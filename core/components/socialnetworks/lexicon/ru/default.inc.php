@@ -8,6 +8,7 @@ $_lang['socialnetworks_intro_msg'] = 'Поддерживаются все бес
 $_lang['socialnetworks_items'] = 'Сервисы';
 $_lang['socialnetworks_item_id'] = 'Id';
 $_lang['socialnetworks_item_name'] = 'Название';
+$_lang['socialnetworks_choose_service'] = 'Выберите сервис';
 $_lang['socialnetworks_item_icon'] = 'Иконка';
 $_lang['socialnetworks_item_icon_img'] = 'Фото';
 $_lang['socialnetworks_item_link'] = 'Ссылка';
